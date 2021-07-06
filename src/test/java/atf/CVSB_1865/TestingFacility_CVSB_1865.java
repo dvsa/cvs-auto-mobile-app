@@ -3,6 +3,7 @@ package atf.CVSB_1865;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import steps.*;
@@ -40,6 +41,7 @@ public class TestingFacility_CVSB_1865 extends BaseTestClass {
     @Steps
     TestHistoryDetailsSteps testHistoryDetailsSteps;
 
+    @Ignore("CVSB-19513 - Ignored till the time the bug is fixed")
     @Title("CVSB - 1865 - AC1 - Sites list + AC2 - No search results")
     @Test
     public void testSitesList() {
